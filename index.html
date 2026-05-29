@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,13 +10,20 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Noto+Sans+KR:wght@400;500;700&display=swap"
+    rel="stylesheet" />
 
   <!-- Pretendard CDN -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+
+
 
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- ===== HEADER ===== -->
@@ -28,10 +36,10 @@
 
       <nav class="header__nav" aria-label="주 메뉴">
         <ul class="nav__list">
-          <li><a href="#about"   class="nav__link">팀 소개</a></li>
+          <li><a href="#about" class="nav__link">팀 소개</a></li>
           <li><a href="#matches" class="nav__link">경기 일정</a></li>
           <li><a href="#players" class="nav__link">선수단</a></li>
-          <li><a href="#events"  class="nav__link">이벤트</a></li>
+          <li><a href="#events" class="nav__link">이벤트</a></li>
         </ul>
       </nav>
 
@@ -44,10 +52,10 @@
   <!-- ===== MOBILE NAV DRAWER ===== -->
   <div id="nav-drawer" class="nav-drawer" aria-hidden="true">
     <ul class="drawer__list">
-      <li><a href="#about"   class="drawer__link">팀 소개</a></li>
+      <li><a href="#about" class="drawer__link">팀 소개</a></li>
       <li><a href="#matches" class="drawer__link">경기 일정</a></li>
       <li><a href="#players" class="drawer__link">선수단</a></li>
-      <li><a href="#events"  class="drawer__link">이벤트</a></li>
+      <li><a href="#events" class="drawer__link">이벤트</a></li>
     </ul>
   </div>
 
@@ -139,11 +147,11 @@
           <h2 class="section__title">선수단</h2>
         </div>
         <div class="players__filter" role="tablist" aria-label="포지션 필터">
-          <button class="filter-btn active" data-pos="ALL"  role="tab" aria-selected="true">전체</button>
-          <button class="filter-btn"        data-pos="GK"   role="tab" aria-selected="false">GK</button>
-          <button class="filter-btn"        data-pos="DF"   role="tab" aria-selected="false">DF</button>
-          <button class="filter-btn"        data-pos="MF"   role="tab" aria-selected="false">MF</button>
-          <button class="filter-btn"        data-pos="FW"   role="tab" aria-selected="false">FW</button>
+          <button class="filter-btn active" data-pos="ALL" role="tab" aria-selected="true">전체</button>
+          <button class="filter-btn" data-pos="GK" role="tab" aria-selected="false">GK</button>
+          <button class="filter-btn" data-pos="DF" role="tab" aria-selected="false">DF</button>
+          <button class="filter-btn" data-pos="MF" role="tab" aria-selected="false">MF</button>
+          <button class="filter-btn" data-pos="FW" role="tab" aria-selected="false">FW</button>
         </div>
         <div id="players-grid" class="players__grid" role="list">
           <!-- JS로 렌더링 -->
@@ -187,13 +195,24 @@
         <h3 class="footer__heading">SNS</h3>
         <div class="sns__icons">
           <a href="#" class="sns__link" aria-label="인스타그램">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="5" />
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
+            </svg>
           </a>
           <a href="#" class="sns__link" aria-label="유튜브">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22.54 6.42A2.78 2.78 0 0 0 20.6 4.46C18.88 4 12 4 12 4s-6.88 0-8.6.46A2.78 2.78 0 0 0 1.46 6.42 29.94 29.94 0 0 0 1 12a29.94 29.94 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.54C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.96A29.94 29.94 0 0 0 23 12a29.94 29.94 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path
+                d="M22.54 6.42A2.78 2.78 0 0 0 20.6 4.46C18.88 4 12 4 12 4s-6.88 0-8.6.46A2.78 2.78 0 0 0 1.46 6.42 29.94 29.94 0 0 0 1 12a29.94 29.94 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.54C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.96A29.94 29.94 0 0 0 23 12a29.94 29.94 0 0 0-.46-5.58z" />
+              <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none" />
+            </svg>
           </a>
           <a href="#" class="sns__link" aria-label="트위터">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
           </a>
         </div>
       </div>
@@ -208,7 +227,10 @@
     <div class="modal__backdrop" id="modal-backdrop"></div>
     <div class="modal__card">
       <button id="modal-close" class="modal__close" aria-label="모달 닫기">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
       </button>
       <div class="modal__header">
         <span id="modal-number" class="modal__number"></span>
@@ -224,4 +246,5 @@
 
   <script src="main.js"></script>
 </body>
+
 </html>
