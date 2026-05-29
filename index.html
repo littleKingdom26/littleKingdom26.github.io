@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="수원FC 공식 팀 소개 페이지 — 경기 일정, 선수단, 오프라인 이벤트를 한눈에 확인하세요." />
+  <title>수원FC — Official Fan Page</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Pretendard CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header id="header" role="banner">
+    <div class="header__inner">
+      <a href="#hero" class="header__logo" aria-label="수원FC 홈으로 이동">
+        <span class="logo__badge">WFC</span>
+        <span class="logo__text">수원<strong>FC</strong></span>
+      </a>
+
+      <nav class="header__nav" aria-label="주 메뉴">
+        <ul class="nav__list">
+          <li><a href="#about"   class="nav__link">팀 소개</a></li>
+          <li><a href="#matches" class="nav__link">경기 일정</a></li>
+          <li><a href="#players" class="nav__link">선수단</a></li>
+          <li><a href="#events"  class="nav__link">이벤트</a></li>
+        </ul>
+      </nav>
+
+      <button id="hamburger" class="hamburger" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== MOBILE NAV DRAWER ===== -->
+  <div id="nav-drawer" class="nav-drawer" aria-hidden="true">
+    <ul class="drawer__list">
+      <li><a href="#about"   class="drawer__link">팀 소개</a></li>
+      <li><a href="#matches" class="drawer__link">경기 일정</a></li>
+      <li><a href="#players" class="drawer__link">선수단</a></li>
+      <li><a href="#events"  class="drawer__link">이벤트</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="section hero" aria-label="메인 비주얼">
+      <div class="hero__bg-text" aria-hidden="true">SUWON</div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">K LEAGUE 1 · 2026</p>
+        <h1 class="hero__title">
+          우리가 바로<br />
+          <span class="hero__title--accent">수원FC</span>
+        </h1>
+        <p class="hero__desc">열정과 전통이 만나는 곳, 경기도 수원.<br />함께라면 우리는 더 강하다.</p>
+        <div class="hero__cta">
+          <a href="#matches" id="cta-matches" class="btn btn--primary">경기 일정 보기</a>
+          <a href="#players" id="cta-players" class="btn btn--outline">선수단 보기</a>
+        </div>
+      </div>
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <span class="scroll-line"></span>
+        <span class="scroll-text">SCROLL</span>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section about" aria-label="팀 소개">
+      <div class="container">
+        <div class="section__header reveal">
+          <p class="section__eyebrow">About Club</p>
+          <h2 class="section__title">수원FC를 소개합니다</h2>
+        </div>
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p class="about__desc">
+              수원FC는 2003년 창단된 경기도 수원시를 연고로 하는 프로 축구 구단입니다.
+              K리그1에서 활약하며 지역 팬들과 함께 성장해왔습니다.
+            </p>
+            <p class="about__desc">
+              역동적인 플레이와 강인한 팀 정신으로 매 시즌 최선을 다하는 수원FC와
+              함께 더 큰 꿈을 향해 나아갑니다.
+            </p>
+            <div class="about__tags">
+              <span class="tag">Dynamic</span>
+              <span class="tag">Clean</span>
+              <span class="tag">Identity-driven</span>
+            </div>
+          </div>
+          <div class="about__stats reveal">
+            <div class="stat-card">
+              <span class="stat-card__num">2003</span>
+              <span class="stat-card__label">창단 연도</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num">K1</span>
+              <span class="stat-card__label">소속 리그</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num">수원</span>
+              <span class="stat-card__label">연고지</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MATCHES ===== -->
+    <section id="matches" class="section matches" aria-label="경기 일정">
+      <div class="container">
+        <div class="section__header reveal">
+          <p class="section__eyebrow">Schedule</p>
+          <h2 class="section__title">경기 일정</h2>
+        </div>
+        <div id="matches-grid" class="matches__grid" role="list">
+          <!-- JS로 렌더링 -->
+        </div>
+        <div class="matches__more">
+          <button id="matches-toggle" class="btn btn--ghost">더보기</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PLAYERS ===== -->
+    <section id="players" class="section players" aria-label="선수단">
+      <div class="container">
+        <div class="section__header reveal">
+          <p class="section__eyebrow">Squad</p>
+          <h2 class="section__title">선수단</h2>
+        </div>
+        <div class="players__filter" role="tablist" aria-label="포지션 필터">
+          <button class="filter-btn active" data-pos="ALL"  role="tab" aria-selected="true">전체</button>
+          <button class="filter-btn"        data-pos="GK"   role="tab" aria-selected="false">GK</button>
+          <button class="filter-btn"        data-pos="DF"   role="tab" aria-selected="false">DF</button>
+          <button class="filter-btn"        data-pos="MF"   role="tab" aria-selected="false">MF</button>
+          <button class="filter-btn"        data-pos="FW"   role="tab" aria-selected="false">FW</button>
+        </div>
+        <div id="players-grid" class="players__grid" role="list">
+          <!-- JS로 렌더링 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EVENTS ===== -->
+    <section id="events" class="section events" aria-label="이벤트">
+      <div class="container">
+        <div class="section__header reveal">
+          <p class="section__eyebrow">Events</p>
+          <h2 class="section__title">오프라인 이벤트</h2>
+        </div>
+        <div id="events-list" class="events__list" role="list">
+          <!-- JS로 렌더링 -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__badge logo__badge--sm">WFC</span>
+        <p class="footer__brand-name">수원FC</p>
+        <p class="footer__tagline">함께라면 우리는 더 강하다</p>
+      </div>
+      <nav class="footer__links" aria-label="빠른 링크">
+        <h3 class="footer__heading">바로가기</h3>
+        <ul>
+          <li><a href="#about">팀 소개</a></li>
+          <li><a href="#matches">경기 일정</a></li>
+          <li><a href="#players">선수단</a></li>
+          <li><a href="#events">이벤트</a></li>
+        </ul>
+      </nav>
+      <div class="footer__sns">
+        <h3 class="footer__heading">SNS</h3>
+        <div class="sns__icons">
+          <a href="#" class="sns__link" aria-label="인스타그램">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="sns__link" aria-label="유튜브">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22.54 6.42A2.78 2.78 0 0 0 20.6 4.46C18.88 4 12 4 12 4s-6.88 0-8.6.46A2.78 2.78 0 0 0 1.46 6.42 29.94 29.94 0 0 0 1 12a29.94 29.94 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.54C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.96A29.94 29.94 0 0 0 23 12a29.94 29.94 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="sns__link" aria-label="트위터">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <p>© 2026 수원FC. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== PLAYER MODAL ===== -->
+  <div id="player-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-name" aria-hidden="true">
+    <div class="modal__backdrop" id="modal-backdrop"></div>
+    <div class="modal__card">
+      <button id="modal-close" class="modal__close" aria-label="모달 닫기">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal__header">
+        <span id="modal-number" class="modal__number"></span>
+        <div>
+          <p id="modal-position" class="modal__position"></p>
+          <h3 id="modal-name" class="modal__name"></h3>
+        </div>
+      </div>
+      <p id="modal-desc" class="modal__desc"></p>
+      <div id="modal-stats" class="modal__stats"></div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
